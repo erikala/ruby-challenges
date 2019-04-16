@@ -11,4 +11,15 @@ socket.puts "USER #{nickname} 0 * #{nickname}"
 
 while message = socket.gets do
   puts message
-end
+
+  if message.match('^PING :')
+
+    server = message.split(':').last
+
+    puts "PONG #{server}"
+
+    socket.puts "PONG #{server}"
+
+  end
+
+ end
