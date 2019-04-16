@@ -28,6 +28,10 @@ while message = socket.gets do
     puts "PRIVMSG #{channel} :I'm the Skillcrush chatbot!"
     socket.puts "PRIVMSG #{channel} :I'm the Skillcrush chatbot!"
 
+  elsif message.match('Please inspire me!')
+    puts "PRIVMSG #{channel} :I didn’t fail the test. I just found 100 ways to do it wrong.” – Benjamin Franklin"
+    socket.puts "PRIVMSG #{channel} :I didn’t fail the test. I just found 100 ways to do it wrong.” – Benjamin Franklin"
+
   end
 
  end
