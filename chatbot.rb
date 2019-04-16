@@ -5,9 +5,11 @@ port    = 6667
 socket  = TCPSocket.open(server, port)
 
 nickname = 'SkillcrushBotOMG'
+channel  = '#BananaStrand1234'
 
 socket.puts "NICK #{nickname}"
 socket.puts "USER #{nickname} 0 * #{nickname}"
+socket.puts "JOIN #{channel}"
 
 while message = socket.gets do
   puts message
